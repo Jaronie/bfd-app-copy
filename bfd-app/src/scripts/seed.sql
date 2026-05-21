@@ -1,7 +1,7 @@
 INSERT INTO products (productName, productDesc, productType, productPrice, image_url) VALUES
 -- Mice Products
 ('Luxuper M-A - Compact Mouse',
-'Ambidextrous, compacr design emphasizing comfort and simplicity. Engineered with an aluminum scroll wheel, dedicated DPI button for up to 3,000 DPI & an additional programmable button for multi-use. 125-1,000 Hz polling rate.',
+'Ambidextrous, compact design emphasizing comfort and simplicity. Engineered with an aluminum scroll wheel, dedicated DPI button for up to 3,000 DPI & an additional programmable button for multi-use. 125-1,000 Hz polling rate.',
 'Mice',
 17.99,
 'images/'),
@@ -25,7 +25,7 @@ INSERT INTO products (productName, productDesc, productType, productPrice, image
 'images/'),
 
 ('Luxuper M-Cx Pro - Ergonomic Mouse',
-'Designed with quality in mind. An upgrade from the compact version, with an advanced vertical design, full aluminum frame. Features a dedicated DPI button for up to 12,000 DPI, 6 programmable buttons, and a customizable RGB indicator. True 4000-8000Hz polling rate.',
+'Designed with quality in mind. An upgrade from the compact version, with an advanced vertical design, full aluminum frame. Features a dedicated DPI button for up to 12,000 DPI, 6 programmable buttons, and a customizable RGB indicator. 4000-8000Hz polling rate.',
 'Mice',
 69.99,
 'images/'),
@@ -39,6 +39,46 @@ INSERT INTO products (productName, productDesc, productType, productPrice, image
 
 
 -- Keyboard Products
+('Luxuper Type E - Ergonomic Full Size Keyboard',
+'The Luxuper',
+'Keyboard',
+75.99,
+'images/'),
+('Luxuper Type E-TKL - (TKL) Ergonomic Full Size Keyboard',
+'',
+'Keyboard',
+59.99),
+('Luxuper Type EW - Wireless Ergonomic Full Size Keyboard',
+'',
+'Keyboard',
+95.99,
+'images/'),
+('Luxuper Type EW-TKL - (TKL) Wireless Ergonomic Full Size Keyboard',
+'',
+'Keyboard',
+65.99,
+'images/'),
+('Luxuper Type Pro E - Ergonomic Aluminum-Alloy Full Size Keyboard',
+'',
+'Keyboard',
+129.99,
+'images/')
+('Luxuper Type Pro E-TKL - Ergonomic Aluminum-Alloy TKL Keyboard',
+'',
+'Keyboard',
+99.99,
+'images/')
+('Luxuper Type Pro EW - Wireless Ergonomic Aluminum-Alloy Full Size Keyboard',
+'',
+'Keyboard',
+199.99,
+'images/')
+('Luxuper Type Pro EW-TKL - Ergonomic Wireless Ergonomic Aluminum-Alloy TKL Keyboard',
+'',
+'Keyboard',
+145.99)
+
+
 
 
 -- Audio Products
