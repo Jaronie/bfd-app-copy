@@ -119,11 +119,56 @@ INSERT INTO products (productName, productDesc, productType, productPrice, image
 'images/'
 ),
 ('Luxuper Desk Bundle S',
-'Size S - Includes our top of the notch full-grain desk mat with added wrist support. Bundled with the Luxuper Type-E Keyboard & M-A mouse.'
+'Size S - Includes our top of the notch full-grain desk mat with added wrist support. Bundled with the Luxuper Type-E Keyboard & M-A mouse.',
 120.99,
 'images/'
 ),
 
 -- Audio Products
+('Luxuper Firebrand',
+'High quality condenser microphone with a cardioid polar pattern, perfect for streaming or podcasting.',
+449.99,
+'images/'
+),
+('Luxuper Firebrand Super',
+'High quality ribbon microphone, following similar design design details from the Firebrand. Our magnum opus of audio capture.',
+499.99,
+'images/'
+),
+('Luxuper Durandall',
+'Adjustable headphones featuring active noise cancelling, ultra-fidelity, and carbon-fiber drivers.',
+600.00,
+'images/'
+),
+('Luxuper Durandall W',
+'Adjustable headphones featuring active noise cancelling, ultra-fidelity, and carbon-fiber drivers. Wireless model.',
+650.00,
+'images/'
+),
+('Luxuper Durandall Eternal',
+'Upgrade from the Durandall model, adding daul-battery mounted capability for up to 120 hours of use without charging.',
+689.99,
+'images/'
+),
+('Luxuper Durandall Eternal W',
+'Upgrade from the Durandall model, adding daul-battery mounted capability for up to 120 hours of use without charging. Wireless model.',
+739.99,
+'images/'
+),
+('Luxuper Pugio',
+'Headset microphone compatible with all Luxuper headsets. Can be mounted to either side of the headset.',
+79.99,
+'images/'
+),
 
 -- Camera Products
+('Luxuper Occhio Glimpse',
+'The first of our wired cameras. 1080p, with a reliable built in microphone and pre-installed noise cancellation software.',
+134.99,
+'images/'
+),
+('Luxuper Occhio Foresight',
+'4k camera with a built-in microphone, featuring modern active noise cancellation and a condenser microphone.',
+179.99,
+'images/'
+)
