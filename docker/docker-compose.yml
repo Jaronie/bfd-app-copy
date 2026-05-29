@@ -1,3 +1,7 @@
+# npm i docker-compose
+# cd docker
+# docker-compose up
+# go to mysql workbench and log in
 services:
  db:
    image: mysql:latest
