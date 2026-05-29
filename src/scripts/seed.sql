@@ -171,11 +171,13 @@ INSERT INTO products (productName, productDesc, productType, productPrice, image
 -- Camera Products
 ('Luxuper Occhio Glimpse',
 'The first of our wired cameras. 1080p, with a reliable built in microphone and pre-installed noise cancellation software.',
+'Webcam',
 134.99,
 'images/'
 ),
 ('Luxuper Occhio Foresight',
 '4k camera with a built-in microphone, featuring modern active noise cancellation and a condenser microphone.',
+'Webcam',
 179.99,
 'images/'
 )
