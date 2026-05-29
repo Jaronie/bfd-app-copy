@@ -1,3 +1,4 @@
 node_modules
 docker/docker-compose.yml
 docker/mysql_data
+.env
