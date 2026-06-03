@@ -1,5 +1,13 @@
 import { getAllProducts, getProductById, getFilteredProducts } from '../services/service.js';
 
+export const status = (req, res) => {
+    res.status(200).json({
+        "ok": true,
+        "service": "Luxuper Premium Computer Peripherals",
+        "time": new Date().toUTCString()
+    });
+}
+
 // GET /products
 export const getProducts = (req, res) => {
     const productArray = getAllProducts();

@@ -10,7 +10,11 @@ router.get("/", (req, res) => {
     });
 });
 
-router.get("/api/products", perCtl.getProducts);
-router.get("/api/products/:id", perCtl.getById);
+router.get("/products", perCtl.getProducts);
+router.get("/products/:id", perCtl.getById);
+
+// for debug
+router.get("/api/products", perCtl.getApiProducts);
+router.get("/api/status", perCtl.status);
 
 export default router;
