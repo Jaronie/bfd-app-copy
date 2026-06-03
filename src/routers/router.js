@@ -10,4 +10,7 @@ router.get("/", (req, res) => {
     });
 });
 
+router.get("/api/products", perCtl.getProducts);
+router.get("/api/products/:id", perCtl.getById);
+
 export default router;
