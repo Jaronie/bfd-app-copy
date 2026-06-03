@@ -40,41 +40,41 @@ INSERT INTO products (productName, productDesc, productType, productPrice, image
 
 -- Keyboard Products
 ('Luxuper Type E - Ergonomic Full Size Keyboard',
-'The Luxuper',
+'Best-selling aluminum frame full size keyboard. Features a hot-swappable PCB board, volume dial, customizable macro keys, and RGB backlighting.',
 'Keyboard',
 75.99,
 'images/'),
 ('Luxuper Type E-TKL - (TKL) Ergonomic Full Size Keyboard',
-'',
+'Best-selling aluminum frame TKL keyboard. Features a hot-swappable PCB board, volume dial, customizable macro keys, and RGB backlighting.',
 'Keyboard',
 59.99),
 ('Luxuper Type EW - Wireless Ergonomic Full Size Keyboard',
-'',
+'Best-selling aluminum frame full size keyboard. Features a hot-swappable PCB board, volume dial, customizable macro keys, and RGB backlighting. Wireless model.',
 'Keyboard',
 95.99,
 'images/'),
 ('Luxuper Type EW-TKL - (TKL) Wireless Ergonomic Full Size Keyboard',
-'',
+'Best-selling aluminum frame TKL keyboard. Features a hot-swappable PCB board, volume dial, customizable macro keys, and RGB backlighting. Wireless model.',
 'Keyboard',
 65.99,
 'images/'),
 ('Luxuper Type Pro E - Ergonomic Aluminum-Alloy Full Size Keyboard',
-'',
+'Aluminum ergonomic frame designed for natural wrist placement. Features a hot-swappable PCB board, volume dial, customizable macro keys, and RGB backlighting.',
 'Keyboard',
 129.99,
 'images/')
 ('Luxuper Type Pro E-TKL - Ergonomic Aluminum-Alloy TKL Keyboard',
-'',
+'Aluminum ergonomic frame designed for natural wrist placement. Features a hot-swappable PCB board, volume dial, customizable macro keys, and RGB backlighting. TKL model.',
 'Keyboard',
 99.99,
 'images/')
 ('Luxuper Type Pro EW - Wireless Ergonomic Aluminum-Alloy Full Size Keyboard',
-'',
+'Aluminum ergonomic frame designed for natural wrist placement. Features a hot-swappable PCB board, volume dial, customizable macro keys, and RGB backlighting. Wireless model.',
 'Keyboard',
 199.99,
 'images/')
 ('Luxuper Type Pro EW-TKL - Ergonomic Wireless Ergonomic Aluminum-Alloy TKL Keyboard',
-'',
+'Aluminum ergonomic frame designed for natural wrist placement. Features a hot-swappable PCB board, volume dial, customizable macro keys, and RGB backlighting. Wireless TKL model.',
 'Keyboard',
 145.99)
 
@@ -119,11 +119,65 @@ INSERT INTO products (productName, productDesc, productType, productPrice, image
 'images/'
 ),
 ('Luxuper Desk Bundle S',
-'Size S - Includes our top of the notch full-grain desk mat with added wrist support. Bundled with the Luxuper Type-E Keyboard & M-A mouse.'
+'Size S - Includes our top of the notch full-grain desk mat with added wrist support. Bundled with the Luxuper Type-E Keyboard & M-A mouse.',
 120.99,
 'images/'
 ),
 
 -- Audio Products
+('Luxuper Firebrand',
+'High quality condenser microphone with a cardioid polar pattern, perfect for streaming or podcasting.',
+'Microphone',
+449.99,
+'images/'
+),
+('Luxuper Firebrand Super',
+'High quality ribbon microphone, following similar design design details from the Firebrand. Our magnum opus of audio capture.',
+'Microphone',
+499.99,
+'images/'
+),
+('Luxuper Durandall',
+'Adjustable headphones featuring active noise cancelling, ultra-fidelity, and carbon-fiber drivers.',
+'Headphones',
+600.00,
+'images/'
+),
+('Luxuper Durandall W',
+'Adjustable headphones featuring active noise cancelling, ultra-fidelity, and carbon-fiber drivers. Wireless model.',
+'Headphones',
+650.00,
+'images/'
+),
+('Luxuper Durandall Eternal',
+'Upgrade from the Durandall model, adding dual-battery mounted capability for up to 120 hours of use without charging.',
+'Headphones',
+689.99,
+'images/'
+),
+('Luxuper Durandall Eternal W',
+'Upgrade from the Durandall model, adding dual-battery mounted capability for up to 120 hours of use without charging. Wireless model.',
+'Headphones',
+739.99,
+'images/'
+),
+('Luxuper Pugio',
+'Headset microphone compatible with all Luxuper headsets. Can be mounted to either side of the headset.',
+'Microphone',
+79.99,
+'images/'
+),
 
 -- Camera Products
+('Luxuper Occhio Glimpse',
+'The first of our wired cameras. 1080p, with a reliable built in microphone and pre-installed noise cancellation software.',
+'Webcam',
+134.99,
+'images/'
+),
+('Luxuper Occhio Foresight',
+'4k camera with a built-in microphone, featuring modern active noise cancellation and a condenser microphone.',
+'Webcam',
+179.99,
+'images/'
+)
