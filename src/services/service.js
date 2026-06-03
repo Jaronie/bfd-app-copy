@@ -10,7 +10,7 @@ const pool = mysql.createConnection({
     password: process.env.PASS_,
     database: process.env.DATABASE_,
     port: process.env.PORT_
-}).promise();
+});
 
 // actual service functions
 
