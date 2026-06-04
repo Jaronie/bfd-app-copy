@@ -12,8 +12,7 @@ export const status = (req, res) => {
 export const getProducts = async (req, res) => {
     try {
         const products = await getAllProducts();
-
-        res.render("products", products);
+        res.render("products", { products });
     } catch (err) {
         console.error(err);
         res.status(500).send('Server error');

@@ -16,11 +16,7 @@ const fetchProducts = async () => {
 export const getAllProducts = async () => {
 
     const products = await fetchProducts();
-        
-    return {
-        "productCount": products.length,
-        "productData": products
-    };
+    return products;
 
 };
 
