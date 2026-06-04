@@ -9,9 +9,13 @@ export const status = (req, res) => {
 }
 
 // GET /products
-export const getProducts = (req, res) => {
-    const productArray = getAllProducts();
-    return res.render('products', { products: productArray });
+export const getProducts = async (req, res) => {
+    const product = await getAllProducts();
+
+    res.render("allproducts", {
+        title: "Product Catalogue",
+        products: data.productData
+    });
 };
 
 // GET /products/:id
@@ -30,3 +34,9 @@ export const getById = (req, res) => {
 
     return res.status(200).render('product', { product });
 };
+
+export const homepage = (req, res) =>
+    res.status(200).render("home", {
+        title: "Luxuper",
+        subtitle: "Premium Computer Peripherals"
+    });
