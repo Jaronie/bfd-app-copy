@@ -9,14 +9,7 @@ const fetchProducts = async () => {
 
 export const getAllProducts = () => ({
         "productCount": fetchProducts.length,
-        "productData": fetchProducts.map(el => ({
-                id: el.id,
-                name: el.productName,
-                desc: el.productDesc,
-                type: el.productType,
-                price: el.producePrice,
-                imgUrl: el.image_url
-            }))
+        "productData": fetchProducts
     });
 
 export const getProductById = (findID) => fetchProducts.find(el => el.id === findID);
