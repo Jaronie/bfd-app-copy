@@ -1,4 +1,4 @@
-import { fetchProducts } from "../scripts/db.js";
+import pool from "../scripts/db.js";
 
 const fetchProducts = async () => {
     const sql = "SELECT * FROM products ORDER BY id";
