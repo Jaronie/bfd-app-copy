@@ -10,29 +10,37 @@ export const status = (req, res) => {
 
 // GET /products
 export const getProducts = async (req, res) => {
-    const product = await getAllProducts();
+    try {
+    const data = await getAllProducts();
 
-    res.render("allproducts", {
-        title: "Product Catalogue",
-        products: data.productData
-    });
+
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Product not found');
+    }
 };
 
 // GET /products/:id
-export const getById = (req, res) => {
+export const getById = async (req, res) => {
     const id = Number(req.params.id);
 
     if (isNaN(id)) {
-        return res.status(400).render('error', { message: 'Invalid product ID.' });
+        return res.status(400).send('Product not found');
     }
 
-    const product = getProductById(id);
+    try {
+        const product = await getProductById(id);
 
-    if (!product) {
-        return res.status(404).render('error', { message: `Product with ID ${id} not found.` });
+        if (!product) {
+            return res.status(404).render('error', { message: `Product with ID ${id} not found.` });
+        }
+
+        return res.status(200).render('products', { product });
+
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Product not found');
     }
-
-    return res.status(200).render('product', { product });
 };
 
 export const homepage = (req, res) =>
