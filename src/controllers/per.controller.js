@@ -30,3 +30,9 @@ export const getById = (req, res) => {
 
     return res.status(200).render('product', { product });
 };
+
+export const homepage = (req, res) =>
+    res.status(200).render("home", {
+        title: "Luxuper",
+        subtitle: "Premium Computer Peripherals"
+    });
