@@ -1,4 +1,4 @@
-INSERT INTO products (productName, productDesc, productType, productPrice, image_url) VALUES
+INSERT INTO products (productName, productDesc, productType, producePrice, image_url) VALUES
 -- Mice Products
 ('Luxuper M-A - Compact Mouse',
 'Ambidextrous, compact design emphasizing comfort and simplicity. Engineered with an aluminum scroll wheel, dedicated DPI button for up to 3,000 DPI & an additional programmable button for multi-use. 125-1,000 Hz polling rate.',
@@ -73,11 +73,11 @@ INSERT INTO products (productName, productDesc, productType, productPrice, image
 'Aluminum ergonomic frame designed for natural wrist placement. Features a hot-swappable PCB board, volume dial, customizable macro keys, and RGB backlighting. Wireless model.',
 'Keyboard',
 199.99,
-'images/')
+'images/'),
 ('Luxuper Type Pro EW-TKL - Ergonomic Wireless Ergonomic Aluminum-Alloy TKL Keyboard',
 'Aluminum ergonomic frame designed for natural wrist placement. Features a hot-swappable PCB board, volume dial, customizable macro keys, and RGB backlighting. Wireless TKL model.',
 'Keyboard',
-145.99)
+145.99),
 
 
 -- Desk Mat Products
@@ -90,7 +90,7 @@ INSERT INTO products (productName, productDesc, productType, productPrice, image
 'Genuine full-grain leather delivers functionality with anti-slip bases and refined finish. Protect your desk from scratches, spills, and typical wear and tear. Raised padding along the edge for wrist comfort. Size L, 400x450mm.',
 'Mousepad',
 45.99,
-'images/',
+'images/'
 ),
 ('Luxuper Desk Mat M',
 'Genuine full-grain leather delivers functionality with anti-slip bases and a refined finish. Protect your desk from scratches, spills, and typical wear and tear. Raised padding along the edge for wrist comfort. Size M, 300x350mm.',
