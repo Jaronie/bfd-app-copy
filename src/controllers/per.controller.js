@@ -30,15 +30,3 @@ export const getById = (req, res) => {
 
     return res.status(200).render('product', { product });
 };
-
-// GET /api/products
-export const getApiProducts = (req, res) => {
-    const { category, minPrice, maxPrice, sort } = req.query;
-
-    const products = getFilteredProducts({ category, minPrice, maxPrice, sort });
-
-    return res.status(200).json({
-        message: products.length ? 'Products found.' : 'No products match your filters.',
-        data: products
-    });
-};

@@ -13,7 +13,3 @@ export const getAllProducts = () => ({
     });
 
 export const getProductById = (findID) => fetchProducts.find(el => el.id === findID);
-
-export const getFilteredProducts = () => {
-    //write code here
-}

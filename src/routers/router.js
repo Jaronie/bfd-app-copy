@@ -5,16 +5,13 @@ const router = Router();
 
 router.get("/", (req, res) => {
     res.render("home", {
-        title: "Luxuper",
-        subtitle: "Premium Computer Peripherals"
+        products: perCtl.getProducts,
+        size: perCtl.getProducts.length
     });
 });
 
-router.get("/products", perCtl.getProducts);
-router.get("/products/:id", perCtl.getById);
-
-// for debug
-router.get("/api/products", perCtl.getApiProducts);
+router.get("/api/products", perCtl.getProducts);
+router.get("/api/products/:id", perCtl.getById);
 router.get("/api/status", perCtl.status);
 
 export default router;
