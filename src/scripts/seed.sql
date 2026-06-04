@@ -77,7 +77,8 @@ INSERT INTO products (productName, productDesc, productType, producePrice, image
 ('Luxuper Type Pro EW-TKL - Ergonomic Wireless Ergonomic Aluminum-Alloy TKL Keyboard',
 'Aluminum ergonomic frame designed for natural wrist placement. Features a hot-swappable PCB board, volume dial, customizable macro keys, and RGB backlighting. Wireless TKL model.',
 'Keyboard',
-145.99),
+145.99,
+'images/'),
 
 
 -- Desk Mat Products
@@ -121,6 +122,7 @@ INSERT INTO products (productName, productDesc, productType, producePrice, image
 ),
 ('Luxuper Desk Bundle S',
 'Size S - Includes our top of the notch full-grain desk mat with added wrist support. Bundled with the Luxuper Type-E Keyboard & M-A mouse.',
+'Bundles',
 120.99,
 'images/'
 ),
