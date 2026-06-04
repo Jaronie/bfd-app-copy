@@ -35,7 +35,7 @@ export const getById = async (req, res) => {
             return res.status(404).render('error', { message: `Product with ID ${id} not found.` });
         }
 
-        return res.status(200).render('products', { product });
+        return res.status(200).render('product', { product });
 
     } catch (err) {
         console.error(err);
