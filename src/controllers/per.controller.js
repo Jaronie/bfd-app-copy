@@ -11,12 +11,12 @@ export const status = (req, res) => {
 // GET /products
 export const getProducts = async (req, res) => {
     try {
-    const data = await getAllProducts();
+        const products = await getAllProducts();
 
-
+        res.render("products", products);
     } catch (err) {
         console.error(err);
-        res.status(500).send('Product not found');
+        res.status(500).send('Server error');
     }
 };
 

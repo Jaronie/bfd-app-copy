@@ -1,10 +1,16 @@
 import pool from "../scripts/db.js";
 
-export const fetchProducts = async () => {
+const fetchProducts = async () => {
     const sql = "SELECT * FROM products ORDER BY id";
-    const products = await pool.query(sql);
-    if (products === null) { console.log("Failed to retrieve products!"); }
-    return products[0];
+    try {
+        const products = await pool.query(sql);
+        return products;
+    } catch (err) {
+        console.log("-- Error retrieving data from database. --");
+        console.log(err);
+        console.log("-- End of SQL error. --")
+        return null;
+    }    
 }
 
 export const getAllProducts = async () => {
