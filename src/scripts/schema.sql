@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS products;
 
 CREATE TABLE products (
-    id PRIMARY_KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     productName VARCHAR(255),
     productDesc VARCHAR(255),
     productType VARCHAR(50),
