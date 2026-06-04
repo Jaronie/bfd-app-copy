@@ -12,6 +12,7 @@ export const status = (req, res) => {
 export const getProducts = async (req, res) => {
     try {
         const products = await getAllProducts();
+        console.log(products);
         res.render("products", { products });
     } catch (err) {
         console.error(err);

@@ -4,7 +4,7 @@ const fetchProducts = async () => {
     const sql = "SELECT * FROM products ORDER BY id";
     try {
         const products = await pool.query(sql);
-        return products;
+        return products[0];
     } catch (err) {
         console.log("-- Error retrieving data from database. --");
         console.log(err);
@@ -14,10 +14,8 @@ const fetchProducts = async () => {
 }
 
 export const getAllProducts = async () => {
-
     const products = await fetchProducts();
     return products;
-
 };
 
 export const getProductById = async (findID) => {
