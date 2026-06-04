@@ -63,12 +63,12 @@ INSERT INTO products (productName, productDesc, productType, productPrice, image
 'Aluminum ergonomic frame designed for natural wrist placement. Features a hot-swappable PCB board, volume dial, customizable macro keys, and RGB backlighting.',
 'Keyboard',
 129.99,
-'images/')
+'images/'),
 ('Luxuper Type Pro E-TKL - Ergonomic Aluminum-Alloy TKL Keyboard',
 'Aluminum ergonomic frame designed for natural wrist placement. Features a hot-swappable PCB board, volume dial, customizable macro keys, and RGB backlighting. TKL model.',
 'Keyboard',
 99.99,
-'images/')
+'images/'),
 ('Luxuper Type Pro EW - Wireless Ergonomic Aluminum-Alloy Full Size Keyboard',
 'Aluminum ergonomic frame designed for natural wrist placement. Features a hot-swappable PCB board, volume dial, customizable macro keys, and RGB backlighting. Wireless model.',
 'Keyboard',
