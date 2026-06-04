@@ -1,4 +1,4 @@
-import { getAllProducts, getProductById, getFilteredProducts } from '../services/service.js';
+import { getAllProducts, getProductById } from '../services/service.js';
 
 export const status = (req, res) => {
     res.status(200).json({
