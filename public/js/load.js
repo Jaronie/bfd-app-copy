@@ -9,6 +9,7 @@ async function loadProducts() {
     if(response.ok){
         //converts response body to JSON etxt
         const products = await response.json();
+        console.log("API connected, data received");
 
         //make call to display product cards here
 
