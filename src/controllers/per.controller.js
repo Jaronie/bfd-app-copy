@@ -19,10 +19,8 @@ export const getProducts = async (req, res) => {
             maxPrice,
             sort
         });
-        res.render("products", {
-            products,
-            categories
-            });
+        console.log(products);
+        res.render("products", { products });
     } catch (err) {
         console.error(err);
         res.status(500).send('Server error');
