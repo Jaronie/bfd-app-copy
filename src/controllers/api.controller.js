@@ -11,23 +11,37 @@ export const status = (req, res) => {
 
 // GET /api/products
 export const getProducts = async (req, res) => {
-    try {
-        const { name, category, minPrice, maxPrice, sort} = req.query
-        const products = await getAllProducts({
-            name,
-            category,
-            minPrice,
-            maxPrice,
-            sort
-        });
-        console.log(products);
-        res.json({ products });
-    } catch (err) {
-        console.error(err);
-        res.status(500).json({
-            message: "Could not retrieve products"
-        });
+    const { category, minPrice, maxPrice, sort } = req.query
+    let result = await getAllProducts();
+
+    if (category) {
+        const categories = categories.split(",").map(el => el.trim().toLowerCase());
+        result = result.filter(el => categories.includes(el.category.toLowerCase()));
     }
+
+    if (maxPrice) result = result.filter(el => Number(el.producePrice) <= maxPrice);
+    if (minPrice) result = result.filter(el => Number(el.producePrice) >= minPrice);
+
+    if (sort) {
+        let order = 1;
+        if (sort[0] === "-") { order = -1; }
+
+        result = result.sort((a, b) => {
+            const sortA = a[sort];
+            const sortB = b[sort];
+            if (typeof sortA === "string") { return sortA.localeCompare.sortB; }
+            return (sortA - sortB) * order;
+        });
+
+        if (sort.includes("price")) {
+            result = result.toSorted((a, b) => (a.price - b.price) * order);
+        };
+    };
+
+    return res.status(200).json({
+        count: result.length,
+        filtered: result
+    });
 };
 
 // GET /api/products/:id
