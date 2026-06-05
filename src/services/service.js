@@ -13,24 +13,13 @@ const fetchProducts = async () => {
         return null;
     }    
 }
-const fetchProductById = async () => {
-    const sql = "SELECT * FROM products ORDER BY id = ?";
-
-    try {
-        const [rows] = await pool.query(sql, [id]);
-        return rows;
-    } catch (err) {
-        console.log("-- Error retrieving data from database. --");
-        console.log(err);
-        console.log("-- End of SQL error. --")
-        return null;
-    }    
-}
 
 export const getAllProducts = async () => {
-    return await fetchProducts();
+    const products = await fetchProducts();
+    return products;
 };
 
-export const getProductById = async (id) => {
-    return await fetchProductById(id);
+export const getProductById = async (findID) => {
+    const products = await fetchProducts();
+    return products.find(p => p.id === findID);
 };
