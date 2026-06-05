@@ -46,7 +46,7 @@ export const getById = async (req, res) => {
 
     } catch (err) {
         console.error(err);
-        res.status(500).send('Product not found');
+        return res.status(500).send('Product not found');
     }
 };
 
