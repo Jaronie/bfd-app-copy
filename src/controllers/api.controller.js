@@ -16,7 +16,7 @@ export const getProducts = async (req, res) => {
 
     if (category) {
         const categories = categories.split(",").map(el => el.trim().toLowerCase());
-        result = result.filter(el => categories.includes(el.category.toLowerCase()));
+        result = result.filter(el => categories.includes(el.productType.toLowerCase()));
     }
 
     if (maxPrice) result = result.filter(el => Number(el.producePrice) <= maxPrice);
@@ -34,7 +34,7 @@ export const getProducts = async (req, res) => {
         });
 
         if (sort.includes("price")) {
-            result = result.toSorted((a, b) => (a.price - b.price) * order);
+            result = result.toSorted((a, b) => (a.producePrice - b.producePrice) * order);
         };
     };
 
