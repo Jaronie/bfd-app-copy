@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Luxuper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/js/load.js" defer></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <div class="nav-buttons">
+            <a class="button login">Login</a>
+            <a class="button reg">Register</a>
+            <a class="button prod" href="/api/products">Products</a>
+        </div>
+    </nav>
+
 <main class="container">
 
     <section class="filters-card">
@@ -96,3 +115,63 @@
     </section>
 
 </main>
+
+        <% products.forEach(product => { %>
+
+            <header class="hero">
+                <div class="hero-content">
+                    <h1><%= product.productName %></h1>
+                    <p><%= product.productType %></p>
+                </div>
+
+                <div class="hero-image">
+                    <img
+                        src="/<%= product.image_url %>"
+                        alt="<%= product.productName %>"
+                    />
+                </div>
+            </header>
+
+            <section class="card">
+
+                <h2>Product Information</h2>
+
+                <p>
+                    <strong>Category:</strong>
+                    <%= product.productType %>
+                </p>
+
+                <p>
+                    <strong>Price:</strong>
+                    $<%= product.producePrice %>
+                </p>
+
+                <p>
+                    <strong>Description:</strong>
+                </p>
+
+                <p>
+                    <%= product.productDesc %>
+                </p>
+
+                <br>
+
+                <a
+                    class="button secondary"
+                    href="/api/products/<%= product.id %>"
+                >
+                    View Product
+                </a>
+
+            </section>
+
+        <% }); %>
+
+    </main>
+
+    <footer class="footer">
+        <p>BFD Web Development - (2026)</p>
+    </footer>
+
+</body>
+</html>
