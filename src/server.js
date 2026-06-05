@@ -10,6 +10,7 @@ app.use('/', router);
 
 
 const port = process.env.PORT_;
-app.listen(port, () => {
+const host = process.env.HOST_ || '0.0.0.0';
+app.listen(port, host,() => {
     console.log(`Server started on http://localhost:${port}`);
 })
