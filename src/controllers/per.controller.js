@@ -11,6 +11,14 @@ export const status = (req, res) => {
 // GET /products
 export const getProducts = async (req, res) => {
     try {
+        const { name, category, minPrice, maxPrice, sort} = req.query
+        const products = await getAllProducts({
+            name,
+            category,
+            minPrice,
+            maxPrice,
+            sort
+        });
         console.log(products);
         res.render("products", { products });
     } catch (err) {
