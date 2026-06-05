@@ -8,19 +8,17 @@ export const status = (req, res) => {
     });
 }
 
+const CATEGORIES = ["Mice", "Keyboard", "Mousepad", "Bundles", "Headphones", "Microphone", "Webcam"];
+
 // GET /products
 export const getProducts = async (req, res) => {
     try {
-        const { name, category, minPrice, maxPrice, sort} = req.query
-        const products = await getAllProducts({
-            name,
-            category,
-            minPrice,
-            maxPrice,
-            sort
+        const products = await getAllProducts();
+        res.render("products", {
+            products,
+            categories: CATEGORIES,
+            query: req.query
         });
-        console.log(products);
-        res.render("products", { products });
     } catch (err) {
         console.error(err);
         res.status(500).send('Server error');

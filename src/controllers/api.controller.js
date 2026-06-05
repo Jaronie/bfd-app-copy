@@ -15,7 +15,7 @@ export const getProducts = async (req, res) => {
     let result = await getAllProducts();
 
     if (category) {
-        const categories = categories.split(",").map(el => el.trim().toLowerCase());
+        const categories = category.split(",").map(el => el.trim().toLowerCase());
         result = result.filter(el => categories.includes(el.productType.toLowerCase()));
     }
 

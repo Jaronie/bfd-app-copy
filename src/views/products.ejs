@@ -17,9 +17,104 @@
         </div>
     </nav>
 
-    <main class="container">
+<main class="container">
 
-         </section>
+    <section class="filters-card">
+
+        <h1>All Products</h1>
+        <p>Browse the Luxuper catalog.</p>
+
+        <form class="filter-form" method="GET" action="/api/products">
+
+            <div class="filter-group">
+                <label for="search">Search</label>
+                <input
+                    type="text"
+                    id="search"
+                    name="search"
+                    placeholder="Search name or description..."
+                    value="<%= query?.search || '' %>"
+                />
+            </div>
+
+            <div class="filter-group">
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                    <option value="">All</option>
+
+                    <% categories.forEach(category => { %>
+                        <option
+                            value="<%= category %>"
+                            <%= query?.category === category ? 'selected' : '' %>
+                        >
+                            <%= category %>
+                        </option>
+                    <% }) %>
+
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="sort">Sort</label>
+                <select id="sort" name="sort">
+                    <option value="featured">Featured</option>
+                    <option value="price_asc">Price Low → High</option>
+                    <option value="price_desc">Price High → Low</option>
+                    <option value="name_asc">Name A → Z</option>
+                </select>
+            </div>
+
+            <button class="button secondary" type="submit">
+                Filter
+            </button>
+
+            <a class="button" href="/api/products">
+                Clear
+            </a>
+
+        </form>
+
+    </section>
+
+    <p class="product-count">
+        Showing <%= products.length %> products
+    </p>
+
+    <section class="product-grid">
+
+        <% products.forEach(product => { %>
+
+            <article class="product-card">
+
+                <img
+                    src="/<%= product.image_url %>"
+                    alt="<%= product.productName %>"
+                />
+
+                <h3><%= product.productName %></h3>
+
+                <p class="category">
+                    <%= product.productType %>
+                </p>
+
+                <p class="price">
+                    $<%= product.producePrice %>
+                </p>
+
+                <a
+                    class="button secondary"
+                    href="/api/products/<%= product.id %>"
+                >
+                    View Product
+                </a>
+
+            </article>
+
+        <% }) %>
+
+    </section>
+
+</main>
 
         <% products.forEach(product => { %>
 
