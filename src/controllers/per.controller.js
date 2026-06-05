@@ -19,7 +19,6 @@ export const getProducts = async (req, res) => {
             maxPrice,
             sort
         });
-        console.log(products);
         res.render("products", { products });
     } catch (err) {
         console.error(err);
