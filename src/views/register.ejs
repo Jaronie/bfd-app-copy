@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<%- include('templates/navbar') %>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1><%= title %></h1>
+            <p><%= subtitle %></p>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="/images/logo.png"
+                alt="Luxuper logo"
+            />
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>High quality for high expectations.</h2>
+
+            <p>
+                Peripherals are our physical connection to the digital space.<br><br>
+                That's why Luxuper hand selects the highest quality peripherals for it's customers.<br><br>
+                Whether for work, recreation, or general use, Luxuper will ensure your satisfaction and comfortability.
+            </p>
+
+            <a class="button secondary" href="/products">
+                To Catalogue →
+            </a>
+        </section>
+    </main>
+
+<%- include('templates/footer') %>
+
+</body>
+</html>

@@ -162,7 +162,7 @@ form {
         0 0 0 1px var(--border);
 }
 /* Container */
-.filter-form {
+.form-card{
   display: flex;
   align-items: flex-start;
   gap: 1.5rem;

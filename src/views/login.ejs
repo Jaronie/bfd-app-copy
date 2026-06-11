@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-buttons">
+        <a class="button login">Login</a>
+        <a class="button reg">Register</a>
+        <a class="button prod" href="/products">Products</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1><%= title %></h1>
+            <p><%= subtitle %></p>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="/images/logo.png"
+                alt="Luxuper logo"
+            />
+        </div>
+    </header>
+
+    <main class="container">
+
+    </main>
+<%- include('templates/footer') %>
+
+</body>
+</html>

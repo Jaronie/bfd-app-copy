@@ -11,13 +11,7 @@
 
 <body>
 
-  <nav class="nav-bar">
-    <div class="nav-buttons">
-      <a class="button login">Login</a>
-      <a class="button reg">Register</a>
-      <a class="button prod" href="/products">Products</a>
-    </div>
-  </nav>
+<%- include('templates/navbar') %>
 
   <main class="container">
 
@@ -26,8 +20,8 @@
       <h1>All Products</h1>
       <p>Browse the Luxuper catalog.</p>
 
-      <form class="filter-form" method="GET" action="/api/products">
-        <section class="filter-form">
+      <form method="GET" action="/api/products">
+        <section class="form-card">
           <div class="filter-group">
             <label for="search">Search</label>
             <input type="text" id="search" name="search" placeholder="Search name or description..." value="<%= query?.search || '' %>" />
@@ -123,9 +117,7 @@
 
   </main>
 
-  <footer class="footer">
-    <p>BFD Web Development - (2026)</p>
-  </footer>
+<%- include('templates/footer') %>
 
 </body>
 
